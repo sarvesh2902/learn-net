@@ -492,7 +492,7 @@ export const Educator = ({ address, contract, t_contract, ts_contract }) => {
                   <div className="result">
                     <p>
                       Your balance:{" "}
-                      <Badge variant="success">{balance} EDBX</Badge>
+                      <Badge variant="success">{balance} LNET</Badge>
                     </p>
                   </div>
                 </Tab.Pane>

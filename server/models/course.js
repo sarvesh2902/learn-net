@@ -52,7 +52,13 @@ const courseSchema = new mongoose.Schema({
     type: Buffer,
     required: true,
   },
-  contentUrl: {
+  imageUrl: {
+    type: String,
+  },
+  pdfUrl: {
+    type: String,
+  },
+  videoUrl: {
     type: String,
   },
 });

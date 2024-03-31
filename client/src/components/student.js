@@ -161,13 +161,13 @@ export const Student = ({ address, contract, t_contract, ts_contract }) => {
                   <div className="result">
                     <p>
                       Your balance:{" "}
-                      <Badge variant="success">{balance} EDBX</Badge>
+                      <Badge variant="success">{balance} LNET</Badge>
                     </p>
                   </div>
                   <div className="buyToken">
                     <h5>
                       <label htmlFor="token">
-                        EDBX Tokens <i className="fas fa-coins"></i>
+                        LNET Tokens <i className="fas fa-coins"></i>
                       </label>
                     </h5>
                     <input

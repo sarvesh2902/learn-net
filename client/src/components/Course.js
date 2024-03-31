@@ -314,17 +314,40 @@ export const Course = ({ address, contract }) => {
                   <div className="result">
                     <p>
                       {marks ? (
-                        <Badge
-                          variant={
-                            marks >= 90
-                              ? "success"
-                              : marks >= 60
-                              ? "warning"
-                              : "danger"
-                          }
-                        >
-                          Result: {marks}/100 Marks
-                        </Badge>
+                        <div>
+                          {" "}
+                          <Badge
+                            variant={
+                              marks >= 90
+                                ? "success"
+                                : marks >= 60
+                                ? "warning"
+                                : "danger"
+                            }
+                          >
+                            Result: {marks}/100 Marks
+                          </Badge>
+                          <div>
+                            <Badge
+                              variant={
+                                marks >= 90
+                                  ? "success"
+                                  : marks >= 60
+                                  ? "warning"
+                                  : "danger"
+                              }
+                            >
+                              <a
+                                className="text-white"
+                                href="http://localhost:3001/"
+                                target="_blank"
+                              >
+                                {" "}
+                                Mint Certificate
+                              </a>
+                            </Badge>
+                          </div>
+                        </div>
                       ) : show ? (
                         "Assignment not graded"
                       ) : (

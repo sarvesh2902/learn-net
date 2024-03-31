@@ -36,7 +36,9 @@ router.post("/upload", upload.any(), async (req, res) => {
         users: req.body.users,
         thumbnail: req.files[0].buffer.toString("base64"),
         content: req.files[1].buffer,
-        contentUrl: req.body.contentUrl,
+        imageUrl: req.body.imageUrl,
+        pdfUrl: req.body.pdfUrl,
+        videoUrl: req.body.videoUrl,
       });
       console.log(
         "Course added to database, ID= ",

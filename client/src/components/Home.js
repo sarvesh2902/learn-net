@@ -30,8 +30,8 @@ export const Home = ({ address, contract, t_contract, ts_contract, error }) => {
           </div>
         </div>
         <div className="information">
-          <p>
-            EDBX Token Address: {t_contract?._address}{" "}
+          <p className="text-black">
+            LNET Token Address: {t_contract?._address}{" "}
             <i
               className="far fa-copy"
               onClick={() => {
